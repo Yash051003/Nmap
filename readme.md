@@ -34,7 +34,9 @@ bash
 nmap -sV -sC -Pn 192.168.29.000 (change your actual ip here)
 ```
 
-🎥 RTSP Stream of Camera
+---
+
+## 🎥 RTSP Stream of Camera
 This was the main format that worked for my cameras , you have to see what actually worlks for your model number of the camera:
 
 ```bash
@@ -42,12 +44,15 @@ rtsp://admin:admin@192.168.29.121:554/cam/realmonitor?channel=1&subtype=0
 ```
 Opened it in VLC → Media → Open Network Stream → paste the above
 
-💀 Got error after too many tries:
+
+---
+
+## 💀 Got error after too many tries:
 account locked or please reboot in 24 hours
 
 ✅ Fixed it by rebooting the DVR manually.
 
-📝 Notes
+## 📝 Notes
 Nmap didn’t always return MAC vendors; some devices were unknown
 
 RTSP required default creds (admin:admin) which locked after retries
